@@ -1,0 +1,28 @@
+<h1 id="message" style="text-align: center; margin-top: 50px;">正在加载...</h1>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        display: flex; /* 使用 Flexbox */
+        justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
+        height: 100vh; /* 设置页面高度 */
+        margin: 0; /* 清除默认边距 */
+    }
+    
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const messages = [
+            "恭喜，您抽中了榛子巧克力！😊",
+            "恭喜，您抽中了椰子巧克力！😊",
+            "恭喜，您抽中了双重巧克力！😊"
+        ];
+        const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+        document.getElementById("message").innerText = randomMessage;
+    });
+    
+</script>
